@@ -1,10 +1,14 @@
 package com.smsoft.review.api;
 
 import com.smsoft.review.api.request.CreateAndEditRestaurantRequest;
+import com.smsoft.review.model.RestaurantEntity;
+import com.smsoft.review.service.RestaurantService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
+@RequiredArgsConstructor
 @RestController
 public class RestaurantApi {
+    private final RestaurantService restaurantService;
     @GetMapping("/restaurants")
     public String getRestaurants(){
         return "This is getRestaurants";
@@ -15,9 +19,8 @@ public class RestaurantApi {
     }
 
     @PostMapping("/restaurant")
-    public String createRestaurant(@RequestBody CreateAndEditRestaurantRequest request){
-        return "This is createRestaurant, name=" + request.getName() + "address=" + request.getAddress()
-                + ", menu[0].name= " + request.getMenus().get(0).getName() + ", menu[0].price = " + request.getMenus().get(0).getPrice();
+    public RestaurantEntity createRestaurant(@RequestBody CreateAndEditRestaurantRequest request){
+        return restaurantService.createRestaurant(request);
     }
 
     @PutMapping("/restaurant/{restaurantId}")
