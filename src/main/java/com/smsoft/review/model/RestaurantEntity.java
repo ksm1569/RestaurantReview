@@ -21,4 +21,10 @@ public class RestaurantEntity {
     private String address;
     private ZonedDateTime createdAt;
     private ZonedDateTime updatedAt;
+
+    public void changeNameAndAddress(String name, String address){
+        this.name = name;
+        this.address = address;
+        this.updatedAt = ZonedDateTime.now();
+    }
 }
