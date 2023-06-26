@@ -22,4 +22,16 @@
 - 맛집에 등록된 평균 별점을 조회 할 수 있다.
 
 ### 📜 ERD
-<img src = "https://github.com/ksm1569/RestaurantReview/assets/34292113/809bf957-d2e8-46ff-a6f4-f3f9a8691eca">
+<p align="center">
+  <img width="600" src = "https://github.com/ksm1569/RestaurantReview/assets/34292113/809bf957-d2e8-46ff-a6f4-f3f9a8691eca">
+</p>
+
+### Entity Code
+- restaurant
+
+  <img width="600" src="https://github.com/ksm1569/DevBlog/assets/34292113/7bf7d0d9-50be-4497-baf8-7e2f1ae0ae4e">
+
+- menu
+
+  <img width="600" src="https://github.com/ksm1569/DevBlog/assets/34292113/c50be997-ce77-4bb1-96bb-90e9a47bc534">
+
