@@ -27,6 +27,10 @@
 </p>
 
 ### 👨‍💻 Entity Code
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="1">
+
 - restaurant
 
   <img width="600" src="https://github.com/ksm1569/DevBlog/assets/34292113/7bf7d0d9-50be-4497-baf8-7e2f1ae0ae4e">
@@ -39,12 +43,16 @@
 
   <img width="600" src="https://github.com/ksm1569/DevBlog/assets/34292113/9b8c05b6-18eb-410f-9800-3914f2dba8bc">
 
+</div>
+</details>
+
 ### 🧑‍💻 Mapping spec
 
 <details>
 <summary>접기/펼치기 버튼</summary>
-<div markdown="1">
+<div markdown="2">
 
+<br></br>
 - 맛집 리스트 전체 조회
 
 GET /restaurants
