@@ -7,6 +7,7 @@
 - JPA 공부 - Repository, QueryDSL, Pageable, Slice 등 이해 
 - Docker 및 AWS 배포를 통한 공부 및 기록
 
+
 ### 🔨 사용한 프레임웍, 라이브러리 및 툴
 - IntelliJ Ultimate
 - Postman
@@ -15,16 +16,19 @@
 - Lombok
 - Spring Boot
 - AWS EC2
-  
+
+
 ### ✍ Flow
 - 맛집을 조회, 등록, 수정, 삭제 할 수 있다.
 - 맛집에 등록된 리뷰를 조회, 등록, 삭제 할 수 있다.
 - 맛집에 등록된 평균 별점을 조회 할 수 있다.
 
+
 ### 📜 ERD
 <p align="center">
   <img width="600" src = "https://github.com/ksm1569/RestaurantReview/assets/34292113/809bf957-d2e8-46ff-a6f4-f3f9a8691eca">
 </p>
+
 
 ### 👨‍💻 Entity Code
 <details>
@@ -45,6 +49,7 @@
 
 </div>
 </details>
+
 
 ### 🧑‍💻 Mapping spec
 
@@ -152,5 +157,8 @@ GET /restaurant/{restaurantId}/reviews
 
 </div>
 </details>
+
+
+### ☑ API 통신 테스트, 데이터베이스 확인
 
 
