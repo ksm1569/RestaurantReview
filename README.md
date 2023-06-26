@@ -54,8 +54,8 @@ GET /restaurants
   },
 ]
 ```
-<br>
-- 해당 맛집정보 조회 
+<br></br>
+- 해당 맛집 정보 조회 
 
 GET /restaurant/{restaurantId}
 ```JSON
@@ -71,8 +71,8 @@ GET /restaurant/{restaurantId}
   ]
 }
 ```
-<br>
-- 맛집 생성
+<br></br>
+- 맛집 등록
  
 POST /restaurant
 ```JSON
@@ -84,7 +84,7 @@ POST /restaurant
   ]
 }
 ```
-<br>
+<br></br>
 - 맛집 수정
 
 PUT /restaurant/{restaurantId}
@@ -97,7 +97,42 @@ PUT /restaurant/{restaurantId}
   ]
 }
 ```
-<br>
+<br></br>
 - 맛집 삭제
 
 DELETE /restaurant/{restaurantId}
+
+<br></br>
+- 리뷰 등록
+
+POST /review
+```JSON
+{
+  "restaurantId": int,
+  "content": string,
+  "score": float
+}
+```
+<br></br>
+- 리뷰 삭제
+
+DELETE /review/{reviewId}
+<br></br>
+- 맛집에 등록된 전체 리뷰 조회
+
+GET /restaurant/{restaurantId}/reviews
+```JSON
+{
+  "avgScore": float, // 평균 별점
+  "reviews": [
+    {"id": int, "content": string, "score": float, "createdAt": string},
+    {"id": int, "content": string, "score": float, "createdAt": string},
+    {"id": int, "content": string, "score": float, "createdAt": string}
+  ],
+  "page": {
+    "offset": int,
+    "limit": int
+  }
+}
+```
+<br></br>
