@@ -160,5 +160,24 @@ GET /restaurant/{restaurantId}/reviews
 
 
 ### ☑ API 통신 테스트, 데이터베이스 확인
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="3">
+
+- API테스트
+  
+  <img width="600" src="https://github.com/ksm1569/RestaurantReview/assets/34292113/c75f7f3d-f652-4e18-b6e0-94be7a0e7596">
 
 
+- 맛집 테이블 조회
+
+  <img width="600" src="https://github.com/ksm1569/RestaurantReview/assets/34292113/54c86c82-8343-4ec3-9d9c-f99e899a4ac4">
+
+
+- 리뷰 테이블 조회
+
+  <img width="600" src="https://github.com/ksm1569/RestaurantReview/assets/34292113/75e5405a-0964-45bc-8ef2-ad9d784de14e">
+
+
+</div>
+</details>
