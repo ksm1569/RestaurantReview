@@ -54,8 +54,7 @@ GET /restaurants
   },
 ]
 ```
-
-
+<br>
 - 해당 맛집정보 조회 
 
 GET /restaurant/{restaurantId}
@@ -72,8 +71,7 @@ GET /restaurant/{restaurantId}
   ]
 }
 ```
-
-
+<br>
 - 맛집 생성
  
 POST /restaurant
@@ -86,8 +84,7 @@ POST /restaurant
   ]
 }
 ```
-
-
+<br>
 - 맛집 수정
 
 PUT /restaurant/{restaurantId}
@@ -100,8 +97,7 @@ PUT /restaurant/{restaurantId}
   ]
 }
 ```
-
-
+<br>
 - 맛집 삭제
 
 DELETE /restaurant/{restaurantId}
