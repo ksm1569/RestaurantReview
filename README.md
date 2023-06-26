@@ -40,6 +40,11 @@
   <img width="600" src="https://github.com/ksm1569/DevBlog/assets/34292113/9b8c05b6-18eb-410f-9800-3914f2dba8bc">
 
 ### 🧑‍💻 Mapping spec
+
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="1">
+
 - 맛집 리스트 전체 조회
 
 GET /restaurants
@@ -136,3 +141,8 @@ GET /restaurant/{restaurantId}/reviews
 }
 ```
 <br></br>
+
+</div>
+</details>
+
+
