@@ -35,7 +35,6 @@ public class ReviewService {
     public void deleteReview(Long reviewId){
         ReviewEntity review = reviewRepository.findById(reviewId).orElseThrow();
 
-
         reviewRepository.delete(review);
     }
 
