@@ -184,6 +184,10 @@ GET /restaurant/{restaurantId}/reviews
 
 
 ### ⚙ Docker, AWS 설정
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="4">
+
 ```Java
 // application.properties
 spring.h2.console.settings.web-allow-others=true
@@ -262,6 +266,9 @@ $ sudo docker-compose up -d --build
 ```
 
 <img width="600" src="https://github.com/ksm1569/RestaurantReview/assets/34292113/7d56b245-d7ed-4cc2-8054-99a07423627c">
+
+</div>
+</details>
 
 ### ✌ 마치며
 스프링 프레임워크와 JPA라는 기술들로 RESTAPI 통신을 하여,
