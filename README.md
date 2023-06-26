@@ -181,3 +181,84 @@ GET /restaurant/{restaurantId}/reviews
 
 </div>
 </details>
+
+
+### ⚙ Docker, AWS 설정
+```Java
+// application.properties
+spring.h2.console.settings.web-allow-others=true
+```
+
+```Shell
+# Dockerfile
+
+FROM amazoncorretto:17
+
+WORKDIR /app
+
+COPY ./build/libs/review-0.0.1-SNAPSHOT.jar /app/review.jar
+COPY ./entry-point.sh /app/entry-point.sh
+RUN chmod +x /app/entry-point.sh
+
+ENTRYPOINT ["./entry-point.sh"]
+```
+
+```Shell
+# entry-point.sh
+
+#!/bin/bash
+
+java -jar /app/review.jar
+```
+
+```Shell
+# docker-compose.yml
+
+version: "3.8"
+
+services:
+  review-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+```
+
+```Shell
+# Docker Contianer Image 빌드하기
+$ docker build -t review-api ./
+
+# Docker Container 실행하기
+$ docker run -it -p 8080:8080 review-api
+
+# Docker Compose 실행하기
+$ docker-compose up --build
+
+```
+
+AWS EC2 인스턴스 만들고 -> 인바운드 규칙에 포트 설정 후 -> git 설치끝나면 clone 해준다음에 설정 사항들
+
+```Shell
+# git, docker, jdk 설치
+$ sudo yum install -y git docker java-17-amazon-corretto
+
+# docker-compose 설치
+$ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+# 도커 실행
+$ sudo service docker start
+
+# 자바 애플리케이션 빌드
+$ ./gradlew bootJar
+
+# 서버 실행
+$ sudo docker-compose up --build
+
+# 서버 백그라운드 실행
+$ sudo docker-compose up -d --build
+
+```
+
+### 마치며
