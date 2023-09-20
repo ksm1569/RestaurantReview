@@ -4,7 +4,7 @@
 
 - REST API 이해
 - SPRING BOOT 공부 - 어노테이션, H2 Database 등 이해
-- JPA 공부 - Repository, QueryDSL, Pageable, Slice 등 이해 
+- Spring Data JPA 공부 - Repository, QueryDSL, Pageable, Slice 등 이해 
 - Docker 및 AWS 배포를 통한 공부 및 기록
 
 
@@ -271,10 +271,10 @@ $ sudo docker-compose up -d --build
 </details>
 
 ### ✌ 마치며
-스프링 프레임워크와 JPA라는 기술들로 RESTAPI 통신을 하여,
+스프링 프레임워크, 스프링 데이터 JPA라는 기술으로 RESTAPI 통신을 하여,
 
 백엔드단의 기본기를 다지고 복습을 해보는 과정이였다.
 
 까먹은 내용도 있고, AWS 배포부분까지는 해본 적이 없어서 괜찮은 시간이였다고 생각이 든다.
 
-앞으로는 토이프로젝트들을 깃허브에 넣어두고 기록도 해두어서 틈틈히 들여다봐야겠다.
+앞으로는 토이 프로젝트들을 깃허브에 넣어두고 기록도 해두어서 틈틈히 들여다봐야겠다.
